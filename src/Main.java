@@ -1,9 +1,13 @@
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
 
 	public static void main(String[] args) {
 		Cliente venilton = new Cliente();
 		venilton.setNome("Venilton");
+
+		List<Conta> contas = new ArrayList<>();
 		
 		Conta cc = new ContaCorrente(venilton);
 		Conta poupanca = new ContaPoupanca(venilton);
